@@ -1,6 +1,6 @@
 {
   "name": "@wismim/react-claps",
-  "version": "1.0.2-pre.1",
+  "version": "1.0.2-pre.2",
   "private": false,
   "main": "dist/Claps.js",
   "babel": {
@@ -34,6 +34,9 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "mo-js": "^0.288.2"
+  },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -42,11 +45,10 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
     "@babel/cli": "^7.7.5",
-    "@babel/preset-react": "^7.7.4",
-    "mo-js": "^0.288.2"
+    "@babel/preset-react": "^7.7.4"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/wismim/react-claps.git"
-  } 
+  }
 }
