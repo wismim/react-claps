@@ -1,13 +1,21 @@
 {
   "name": "@wismim/react-claps",
-  "version": "1.0.2-pre.2",
+  "version": "1.0.2",
+  "author": "Abid Shamim P.M.",
+  "homepage": "https://github.com/wismim/react-claps",
   "private": false,
-  "main": "dist/Claps.js",
+  "main": "dist/index.js",
   "babel": {
     "presets": [
       "@babel/preset-react"
     ]
   },
+  "keywords": [
+    "react-claps",
+    "wismim",
+    "Medium claps",
+    "React Medium claps"
+  ],
   "peerDependencies": {
     "react": "^16.10.1",
     "react-dom": "^16.10.1"
@@ -37,6 +45,7 @@
   "dependencies": {
     "mo-js": "^0.288.2"
   },
+  "type": "module",
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

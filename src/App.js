@@ -1,5 +1,5 @@
 import React from 'react';
-import Claps from './components/Claps'
+import Claps from './components/'
 
 function App() {
   return (
