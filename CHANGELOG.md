@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.4-pre.0] - 2019-12-19
+### Changed
+- Temporary fix for `SyntaxError: Cannot use import statement outside a module`
+- Support for `onMaxHit` prop as a callback after max hit
+
 ## [1.0.3] - 2019-12-19
 ### Changed
 - Changed maxCount to 10000

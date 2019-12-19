@@ -1,5 +1,5 @@
-import React from 'react';
-import './claps.css';
+require('./claps.css');
+const React = require('react');
 const mojs = require('mo-js');
 
 class Claps extends React.Component {
@@ -9,7 +9,7 @@ class Claps extends React.Component {
     this.state = {
       count: count,
       countTotal: countTotal,
-      isClicked: props.count > 0,
+      isClicked: props.count > 0
     }
     this._handleClick = this._handleClick.bind(this);
   }
@@ -92,7 +92,7 @@ class Claps extends React.Component {
 
 
   _handleClick() {
-    const { count=0, countTotal=0, maxCount=10000, onCountChange=() => { } } = this.props;
+    const { count=0, countTotal=0, maxCount=10000, onCountChange=() => { }, onMaxHit=() => {} } = this.props;
     this._animationTimeline.replay();
     this.setState(function ({ count, countTotal }) {
       if (count < maxCount) {
@@ -104,6 +104,7 @@ class Claps extends React.Component {
         }
       }
       else {
+        onMaxHit({ count, countTotal, maxCount});
         console.error('Maximum Allowed Claps Reached !');
       }
     })

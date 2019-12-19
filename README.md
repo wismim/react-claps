@@ -13,6 +13,6 @@ export default function () {
 ```
 const Claps = dynamic(() => import('@wismim/react-claps'));
 export default function () {
-    return <Claps maxCount={10000} count={0} countTotal={0} onCountChange={({ count, countTotal }) => console.log(count, countTotal)} />
+    return <Claps maxCount={10000} count={0} countTotal={0} onCountChange={({ count, countTotal }) => console.log(count, countTotal)} onMaxHit={({count}) => localStorage.setItem(`max_${blogId}`,true)}/>
 }
 ```
