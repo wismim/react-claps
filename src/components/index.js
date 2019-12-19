@@ -92,7 +92,7 @@ class Claps extends React.Component {
 
 
   _handleClick() {
-    const { count=0, countTotal=0, maxCount=100, onCountChange=() => { } } = this.props;
+    const { count=0, countTotal=0, maxCount=10000, onCountChange=() => { } } = this.props;
     this._animationTimeline.replay();
     this.setState(function ({ count, countTotal }) {
       if (count < maxCount) {
