@@ -1,5 +1,5 @@
-require('./claps.css');
-const React = require('react');
+import React from 'react';
+import ('./claps.css');
 const mojs = require('mo-js');
 
 class Claps extends React.Component {

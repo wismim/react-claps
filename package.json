@@ -1,12 +1,13 @@
 {
   "name": "@wismim/react-claps",
-  "version": "1.0.4-pre.0",
+  "version": "1.0.4",
   "author": "Abid Shamim P.M.",
   "homepage": "https://github.com/wismim/react-claps",
   "private": false,
   "main": "dist/index.js",
   "babel": {
     "presets": [
+      "@babel/preset-env",
       "@babel/preset-react"
     ]
   },
