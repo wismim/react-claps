@@ -11,7 +11,7 @@ export default function () {
 
 ### Usage in NEXT JS (SSR)
 ```
-const Claps = dynamic(() => import('@wismim/react-claps'));
+const Claps = dynamic(() => import('@wismim/react-claps'),{ssr:false});
 export default function () {
     return <Claps maxCount={10000} count={0} countTotal={0} onCountChange={({ count, countTotal }) => console.log(count, countTotal)} onMaxHit={({count}) => localStorage.setItem(`max_${blogId}`,true)}/>
 }
